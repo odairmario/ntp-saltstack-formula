@@ -13,7 +13,7 @@ include:
 ntp-config-file-file-managed:
   file.managed:
     - name: {{ ntp.config }}
-    - source: {{ files_switch(['example.tmpl'],
+    - source: {{ files_switch(['ntp.conf.jinja'],
                               lookup='ntp-config-file-file-managed'
                  )
               }}

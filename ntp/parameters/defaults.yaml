@@ -7,11 +7,11 @@ values:
   pkg:
     name: ntp
   rootgroup: root
-  config: '/etc/ntp'
+  config: /etc/ntp.conf
+  pools:
+    - "0.debian.pool.ntp.org iburst"
   service:
     name: ntp
-  subcomponent:
-    config: '/etc/ntp-subcomponent-formula.conf'
   # Just here for testing
   added_in_defaults: defaults_value
   winner: defaults

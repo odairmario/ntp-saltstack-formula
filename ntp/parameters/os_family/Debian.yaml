@@ -13,6 +13,6 @@
 ---
 values:
   pkg:
-    name: ntp-debian
-  config: /etc/ntp.d/custom.conf
+    name: ntp
+  config: /etc/ntp.conf
 ...
